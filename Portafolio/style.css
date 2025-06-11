@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*
+colores
+869D7A green
+E54B4B red 
+EEE5E9 bone 
+191923 black 
+FF7F51 orange
+*/
+
+body{
+    background-color: #EEE5E9;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    color: #191923;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+}
+
+.section__title{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__principal {
+    display: flex;
+    height: 100vh; 
+    width: 100%; 
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    align-items: center;
+    justify-content: center;
+}
+
+.principal__content{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__description{
+    text-align: center;
+    padding: 10px;
+    margin-right: 20vh;
+}
+
+.description__title, .description__info{
+    margin: 0;
+}
+
+.description__title{
+    font-size: 50px;
+}
+
+.description__info{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    color: #FF7F51;
+    font-size: 35px;
+}
+
+.photo__perfil{
+    width: 400px;
+    background-color: #FF7F51;
+    border-radius: 50%;
+}
+
+.description__btn{
+margin-top: 10px;
+border-radius: 5px;
+border: none;
+background-color: #869D7A;
+padding: 12px;
+font-family: "Source Sans 3", sans-serif;
+font-weight: bold;
+color: #EEE5E9;
+font-size: 16px;
+cursor: pointer;
+}
+
+/**/
+
+.section__aboutme{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+.aboutme__content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.aboutme__photo{
+    width: 450px;
+    height: 500px;
+    background-color: #FF7F51;
+}
+
+.aboutme__description{
+    padding: 30px;
+}
+
+.item__title{
+    font-size: 50px;
+}
+
+.item__description{
+    font-size: 18px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/**/
+
+.section__projects{
+    width: 100%;
+}
+
+.project__title{
+    padding: 10px;
+}
+
+.projects__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card__project{
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+
+.card__btn{
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.274);
+    text-decoration: none;
+    color: #191923;
+    overflow: hidden;
+}
+
+.card__img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(imgs/projects/project1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+}
+
+.item__subtitle{
+    width: 100%;
+    background-color: #eee5e9b4;
+    margin-bottom: 0px;
+    padding-left: 8px;
+}
+
+.card__description{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.item__description2{
+    font-family: "Source Sans 3", sans-serif;
+    padding: 8px;
+    margin: 0;
+}
