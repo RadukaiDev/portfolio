@@ -77,7 +77,7 @@ body{
 }
 
 .description__btn{
-margin-top: 10px;
+margin-top: 4px;
 border-radius: 5px;
 border: none;
 background-color: #869D7A;
@@ -168,6 +168,15 @@ cursor: pointer;
 .img--1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    background-image: url(imgs/projects/project3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img--3{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-image: url(imgs/projects/project1.png);
     background-size: cover;
     background-position: center;
@@ -233,6 +242,7 @@ cursor: pointer;
     margin: 8px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.274);
+    border: #19192363 2px solid;
 }
 
 .card__logo{
@@ -256,7 +266,7 @@ cursor: pointer;
 
 .logo__img{
     width: 80%;
-    height: 80%;
+    height: 75%;
 }
 
 .experience__title{
