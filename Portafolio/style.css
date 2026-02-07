@@ -1,274 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
-/*
-colores
-869D7A green
-E54B4B red 
-EEE5E9 bone 
-191923 black 
-FF7F51 orange
-*/
-
-body{
-    background-color: #EEE5E9;
-    font-family: "Playfair Display", serif;
-    margin: 0;
-    padding: 0;
-    color: #191923;
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.section{
-    height: 100vh;
-    width: 100%;
+body {
+  background-color: #000;
+  color: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
 }
 
-.section__title{
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+/* ===== PROFILE ===== */
+.profile {
+  max-width: 700px;
+  width: 100%;
 }
 
-.section__principal {
-    display: flex;
-    height: 100vh; 
-    width: 100%; 
-    background-size: cover;
-    background-position: bottom; 
-    background-repeat: no-repeat; 
-    align-items: center;
-    justify-content: center;
+.profile__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.principal__content{
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+.profile__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
-.content__description{
-    text-align: center;
-    padding: 10px;
-    margin-right: 20vh;
+.profile__name {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.description__title, .description__info{
-    margin: 0;
+.profile__role {
+  font-size: 0.95rem;
+  color: #aaa;
 }
 
-.description__title{
-    font-size: 50px;
+.profile__link {
+  color: #4da3ff;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-.description__info{
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: bold;
-    color: #FF7F51;
-    font-size: 35px;
+/* ===== ABOUT ===== */
+.profile__about {
+  margin-bottom: 2.5rem;
 }
 
-.photo__perfil{
-    width: 400px;
-    background-color: #FF7F51;
-    border-radius: 50%;
+.profile__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 0.6rem;
 }
 
-.description__btn{
-margin-top: 4px;
-border-radius: 5px;
-border: none;
-background-color: #869D7A;
-padding: 12px;
-font-family: "Source Sans 3", sans-serif;
-font-weight: bold;
-color: #EEE5E9;
-font-size: 16px;
-cursor: pointer;
+.profile__description {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.6;
 }
 
-/**/
-
-.section__aboutme{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 10px;
-}
-.aboutme__content{
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-.aboutme__photo{
-    width: 450px;
-    height: 500px;
-    background-color: #FF7F51;
-    object-fit: cover; 
-    border-radius: 10px;   
-
+/* ===== EXPERIENCE ===== */
+.profile__experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-
-.aboutme__description{
-    padding: 30px;
+.experience__item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #0a0a0a;
+  transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
-.item__title{
-    text-align: center;
-    font-size: 50px;
+.experience__item:hover {
+  transform: scale(1.04);
+  background-color: #111;
 }
 
-.item__title2{
-    font-size: 50px;
+.experience__date {
+  font-size: 0.9rem;
+  color: #777;
 }
 
-.item__description{
-    font-size: 18px;
-    font-family: "Source Sans 3", sans-serif;
+.experience__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin-bottom: 0.4rem;
 }
 
-/**/
-
-.section__projects{
-    width: 100%;
+.experience__desc {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
 }
 
-.project__title{
-    padding: 10px;
+.experience__tech {
+  font-size: 0.85rem;
+  color: #888;
 }
 
-.project__center{
-    padding: 10px;
-    text-align: center;
-}
-
-.projects__content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.card__project{
-    display: flex;
-    width: 400px;
-    height: 300px;
-}
-
-.card__btn{
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.274);
-    text-decoration: none;
-    color: #191923;
-    overflow: hidden;
-}
-
-.img--1{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-image: url(imgs/projects/project3.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img--3{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-image: url(imgs/projects/project1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img--2{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-image: url(imgs/projects/project2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-.card__img{
-    display: flex;
-    height: 200px;
-    align-items: flex-end;
-}
-
-.item__subtitle{
-    width: 100%;
-    background-color: #eee5e9b4;
-    margin-bottom: 0px;
-    padding-left: 8px;
-}
-
-.item__subtitle2{
-    margin: 0;
-}
-
-.card__description{
-    display: flex;
-    align-items: center;
-    height: 100px;
-}
-
-.item__description2{
-    font-family: "Source Sans 3", sans-serif;
-    padding: 8px;
-    margin: 0;
-}
-
-/**/
-
-.experience__content{
-    width: 100%;
-    height: 70%;
-    justify-content: center;
-}
-
-.row__card{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.experience__card{
-    display: flex;
-    width: 80%;
-    height: 180px;
-    align-items: center;
-    margin: 8px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.274);
-    border: #19192363 2px solid;
-}
-
-.card__logo{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.experience__img{
-    width: 140px;
-}
-
-.card__info{
-    background-color: #EEE5E9;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-.logo__img{
-    width: 80%;
-    height: 75%;
-}
-
-.experience__title{
-font-size: 18px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .experience__item {
+    grid-template-columns: 1fr;
+  }
+  .experience__date {
+    margin-bottom: 0.3rem;
+  }
 }
